@@ -13,10 +13,11 @@ plt.style.use('ggplot')
 import nltk
 
 
-consumer_key='biECUnyLnPZoTmLoskjnEgBdk'
-consumer_secret ='ieNpW55rjdO3qCqaVW7Fhe6YMQJG1rP4IeTVKMxI916aPpXP3B'
-access_token = '1580904624248475648-tCMeDvOiK4mVedk320PvZRYglmpGnU'
-access_token_secret = 'fFA2PQHjcOtsDqxwMmCBNWhZE3nwMfn3Hm1r9Bu654dPC'
+consumer_key=''
+consumer_secret =''
+access_token = ''
+access_token_secret = ''
+#Find your own keys in Twitter
 
 app=Flask(__name__) 
 
@@ -73,7 +74,7 @@ def getdata2():
 
 @app.route('/amazon')
 def index3():
-    df = pd.read_csv(r"C:\Users\Sambh\Desktop\Work\College\Codes\project\dataset/sample30.csv")
+    df = pd.read_csv(r"/sample30.csv")
     print(df.shape)
     df = df.head(1000)
     print(df.shape)
