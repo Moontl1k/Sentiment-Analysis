@@ -6,6 +6,7 @@
 html
 {
   scroll-behavior: smooth;
+  cursor:crosshair;
 }
 body
 {
@@ -159,19 +160,62 @@ body
 {
   width: 100%;
 	height: 610px; 
-  background-image: url("static/bg5.jpg");
+  background-image: url("/static/datasetbg.webp");
 	background-attachment:fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .parallax-5 img
 {
-  margin-top: 300px;
+  margin-top: 180px;
   margin-left: 530px;
   height: 200px;
   background-attachment: fixed;
   opacity: 80%;
 }
+.parallax-5 h1
+{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 40px;
+  margin: auto;
+	position: relative;
+	top: 90px;
+	width: 100%;
+	color: brown;
+	text-align: center;
+  text-transform: capitalize;
+  background-color: white;
+  opacity: 70%;
+}
+.parallax-5 h4
+{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin: auto;
+	position: relative;
+	top: 150px;
+	width: 90%;
+	color: brown;
+	text-align: center;
+  text-transform: capitalize;
+  background-color: white;
+  opacity: 70%;
+}
+.parallax-5 h6
+{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  margin: auto;
+	position: relative;
+	top: 410px;
+	width: 21%;
+	color: black;
+	text-align: center;
+  text-transform: capitalize;
+  background-color: white;
+  opacity: 70%;
+}
+
 .parallax-6 
 {
   width: 100%;
@@ -180,6 +224,27 @@ body
 	background-attachment:fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.parallax-6 img
+{
+  height:180px;
+  width: 180px;
+  margin-left: 50px;
+  margin-top: 70px;
+  object-fit: cover;
+}
+.parallax-6 h5
+{
+  margin-left: 58px;
+  margin-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 19px;
+}
+.parallax-6 h6
+{
+  margin-left: 58px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 19px;
 }
 
 </style>
@@ -192,7 +257,7 @@ body
   <a href="#article">Article</a>
   <a href="#twitter">Twitter</a>
   <a href="#dataset">Data Set</a>
-  <a href="#contact">Contact</a>
+  <a href="#contact">Contact Us</a>
 </div>
 
 <div class="parallax-1" id="home"></div>
@@ -213,10 +278,19 @@ body
   <a href="http://127.0.0.1:5000/twet"><img src="static/twitter.png"></a>
 </div>
 <div class="parallax-5" id="dataset">
-  <h1 style="color: white;">Analyze Pre-saved dataset</h1>
-  <a href="http://127.0.0.1:5000/amazon"><img src="static/data.png"></a>
+  <h1>Analysis Of Amazon Product Reviews</h1>
+  <h4>We picked a dataset of different amazon product reviews from Kaggle and ran the sentiment analysis algorithm on top 1000 reviews. 
+    the reviews were catagorised into "POSITIVE" and "NEGATIVE" reviews and data was plotted on a graph.
+  </h4>
+  <h6>Click On Icon Above To View Graph</h6>
+  <a href="http://127.0.0.1:5000/amazon"><img src="/static/data.png"></a>
 </div>
-<div class="parallax-6" id="contact"></div>
+<div class="parallax-6" id="contact">
+  <img src="/static/Sambhav.jpg"><img src="/static/Radhika.JPG">
+  <h5>Sambhav Srivastava &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; Radhika Agarwal
+    <br> &nbsp;(2000270110079) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(2000270130127)
+  </h5>
+</div>
 
 </body>
 </html>
